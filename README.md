@@ -13,7 +13,7 @@ This Python project using pandas library to learn about bike share use in Chicag
     ```
 
 - Anaconda: Download and install Anaconda in https://docs.anaconda.com/free/anaconda/install/
-    - Note: Check python version by using this command in terminal:
+    - Note: Check Anaconda version by using this command in terminal:
     ```
     $ conda --version
     ```
