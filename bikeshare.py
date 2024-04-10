@@ -1,6 +1,5 @@
 import time
 import pandas as pd
-import numpy as np
 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
@@ -50,7 +49,7 @@ def get_filters():
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
     day = get_day()
 
-    print('-'*40)
+    print('-'*60)
     return city, month, day
 
 
@@ -117,7 +116,7 @@ def time_stats(df):
     print("Most Frequent Hour: ", most_common_hour)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-'*60)
 
 
 def station_stats(df):
@@ -142,7 +141,7 @@ def station_stats(df):
     print("Most Popular Trip: ", most_popular_trip['Start Station'], "to", most_popular_trip['End Station'])
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-'*60)
 
 
 def trip_duration_stats(df):
@@ -160,7 +159,7 @@ def trip_duration_stats(df):
     print("Average Trip Duration: ", average_duration)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-'*60)
 
 
 def user_stats(df):
@@ -195,7 +194,7 @@ def user_stats(df):
         print("\nBirth Year Column not exists!!!")
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-'*60)
 
 
 def main():
